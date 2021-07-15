@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+const config = require("../config/config");
 
 const getConnection = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/sistemainteligente", {
+    await mongoose.connect(config.db.URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,

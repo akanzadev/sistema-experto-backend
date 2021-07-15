@@ -7,6 +7,9 @@ const config = {
     SEED: process.env.JWT_SEED || "DEV",
     JWT_EXPIRED: process.env.JWT_EXPIRED || 2000,
   },
+  db: {
+    URI: process.env.DB_URI || "mongodb://localhost:27017/sistemainteligente",
+  },
 };
 
 module.exports = config;
