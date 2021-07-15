@@ -1,0 +1,31 @@
+// Referencia del servidor
+@host = http://localhost:7800
+
+// Obtener todos los usuarios
+GET {{host}}/users/
+
+###
+// Obtener todas las preguntas
+GET {{host}}/questions/
+
+###
+// Obtener todos las evaluaciones 
+GET {{host}}/evaluations/
+
+###
+// Obtener todos las evaluaciones de segun el usuario
+GET {{host}}/evaluations/user/60df2bb3b5679829706d0eb4
+
+###
+// Obtener todos las evaluaciones de segun el usuario
+GET {{host}}/evaluations/user/60df2bb3b5679829706d0eb4
+
+###
+// Obtener todos las evaluaciones de segun el usuario
+POST {{host}}/evaluation 
+Content-Type: application/json
+
+{
+    "diagnostic":"Diabetis",
+    "user":"60e10029eb41863060bd6cff"
+}
